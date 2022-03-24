@@ -5,40 +5,48 @@
   <meta name="viewport" content="width=device-width">
   <title>Selectors</title>
   <link rel="stylesheet" href="./1.css">
-<style>
-  * {
-    color: green;
-  }
-  li {
-    color: blue;
-  }
-  #special {
-    color: pink;
-  }
-  .btn {
-    color: pink;
-  }
- /* 상태 선택자 */
-  .btn1:hover {
-    background: black;
-  }
-  .btn:active {
-    background: blue;
-  }
-  /* 속성 선택자 */
-  button[class="2btn"] {
-    background: yellow;
-  }
-  
-  button[class^="btn"]{
-    color: aqua;
-  }
+  <style>
+    /* html, body {
+      border: 2px dashed blue;
+    } */
 
-  button[class$="btn"]{
-    color: brown;
-  }
-  
-</style>
+    * {
+      /* margin: 0px; */
+      /* border: 2px dashed blue; */
+      color: green;
+    }
+
+    li {
+      color: blue;
+    } 
+
+    #special {
+      color: pink;
+    }
+    .btn {
+      color: pink;
+    }
+
+    .btn1:hover {
+      background: black;
+    }
+    .btn:active {
+      background: blue;
+    }
+    
+    button[class="2btn"] {
+      background: yellow;
+    }
+    
+    button[class^="btn"]{
+      color: aqua;
+    }
+
+    button[class$="btn"]{
+      color: brown;
+    }
+    
+  </style>
 </head>
 <body>
   <ol>
@@ -50,7 +58,7 @@
   <button class="2btn">button2</button>
   <button class="btn btn3">button3</button>
   <button class="btn btn4">button4</button>
-  <button class="btn 5btn">button5</button>
+  <button class="btn 5btn" style="color: aqua;">button5</button>
 
 </body>
 </html>
